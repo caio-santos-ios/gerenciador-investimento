@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gereciador de investimento</title>
+</head>
+
+<body>
+    <!-- cabeçalho -->
+    <header class="cabeçalho">
+        <div class="foto-usuario">
+            <img src="img/usuario.png" alt="foto-de-usuario-da-conta">
+        </div>
+        <div class="nome-usuario">
+            <h2>Caio</h2>
+        </div>
+    </header>
+    <!-- conteudo principal -->
+    <main>
+        <section class="criar-obj">
+            <div class="criar">
+                <h3>Criar investimento</h3>
+                <form action="">
+                    <select name="objetivos" id="">
+                        <option class="escolher-obj" value="">Escolha seu objetivo</option>
+                        <option value="viajar">Viajar</option>
+                        <option value="reformar-casa">Reformar Casa</option>
+                        <option value="comprar-moveis">Comprar móveis</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                    <input placeholder="Valor inicial" type="text" name="valor-inicial" id="">
+                    <input placeholder="Aportes mensais" type="text" name="aporte-mensal" id="">
+                    <select name="tempo" id="">
+                        <option value="meses">Tempo</option>
+                        <option value="um-mes">1 mês</option>
+                        <option value="tres-mes">3 mês</option>
+                        <option value="seis-mes">6 mês</option>
+                        <option value="doze-mes">12 mês</option>
+                    </select>
+                    <input placeholder="% de rendimentos" type="text" name="rendimento-mensal" id="">
+                </form>
+                <button>Criar</button>
+            </div>
+        </section>
+        <!-- consultar os objetivos -->
+        <section class="consultar-obj">
+            <section>
+                <div class="meus-obj">
+                    <h2>Meus Objetivos</h2>
+                    <table class="titulo-obj">
+                        <tr>
+                            <td>Objetivo</td>
+                            <td>Valor inicial</td>
+                            <td>Aportes</td>
+                            <td>Tempo</td>
+                            <td>% ao mês</td>
+                        </tr>
+                    </table>
+                    <table class="obj">
+                        <tr>
+                            <td>Viajar</td>
+                            <td>R$ 500,00</td>
+                            <td>R$ 100,00</td>
+                            <td>6 meses</td>
+                            <td>1,5% a.m</td>
+                        </tr>
+                        <tr class="obj">
+                            <td>Reformar Casa</td>
+                            <td>R$ 100,00</td>
+                            <td>R$ 120,00</td>
+                            <td>6 meses</td>
+                            <td>2,5% a.m</td>
+                        </tr>
+                        <tr class="obj">
+                            <td>Comprar móveis</td>
+                            <td>R$ 600,00</td>
+                            <td>R$ 250,00</td>
+                            <td>12 meses</td>
+                            <td>1,0% a.m</td>
+                        </tr>
+                        <tr class="obj">
+                            <td>Outros</td>
+                            <td>R$ 100,00</td>
+                            <td>R$ 80,00</td>
+                            <td>12 meses</td>
+                            <td>1,5% a.m</td>
+                        </tr>
+                    </table>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
